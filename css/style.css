@@ -1,0 +1,211 @@
+/***** start global *****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #333;
+    min-width: 300px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h1 {
+    font-size: 4em;
+    color: #2d3c49;
+    margin: 20px 0 10px 0;
+}
+
+h2 {
+    font-size: 30px;
+    color: #2d3c49;
+    margin: 20px 0 10px 7px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    margin: 0 0 20px 5px;;
+}
+
+hr {
+    height: 5px;
+    background-color: #7d97ad;
+}
+
+/***** start global *****/
+
+/* start header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 20%;
+}
+
+.header_inner{
+    width: 80%;
+    text-align: right;
+}
+
+.logo img {
+    max-width: 136px;
+    max-height: 137px;
+    margin-top: 13px;
+}
+
+/* end header */
+
+/* start main image */
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.overlay {
+    background-color: #02b3e4;
+    -wepkit-clip-path: polygon(50% 0%, 100% 0, 100% 69%, 50% 93%, 0 69%, 0 0);
+    -moz-clip-path: polygon(50% 0%, 100% 0, 100% 69%, 50% 93%, 0 69%, 0 0);
+    -o-clip-path: polygon(50% 0%, 100% 0, 100% 69%, 50% 93%, 0 69%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 69%, 50% 93%, 0 69%, 0 0);
+    opacity: 0.9
+}
+
+.image {
+    max-width: 100%;
+    -wepkit-clip-path: polygon(50% 0%, 100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
+    -moz-clip-path: polygon(50% 0%, 100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
+    -o-clip-path: polygon(50% 0%, 100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
+    opacity: 0.3;
+}
+
+/* end main image */
+
+/* start projects images */
+
+.container-projects {
+    display: flex;
+    flex-basis: row;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+}
+
+.project:hover {
+    -webkit-box-shadow: 0px 0px 50px 18px rgba(125, 151, 173, 0.64);
+    -moz-box-shadow: 0px 0px 50px 18px rgba(125, 151, 173, 0.64);
+    -o-box-shadow: 0px 0px 50px 18px rgba(125, 151, 173, 0.64);
+    box-shadow: 0px 0px 50px 18px rgba(125, 151, 173, 0.64);
+}
+
+.image-pro {
+    width: 100%;
+    height: 200px;
+}
+
+/* end projects images */
+
+/* star footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+}
+
+.copyright p {
+    font-weight: bold;
+}
+
+svg:not(:root).svg-inline--fa {
+    text-align: center;
+    margin: 10px 20px 15px;
+    color: #45c2e9;
+}
+
+/* end footer */
+
+/***** start responsive *****/
+
+@media screen and (max-width: 650px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+
+    .logo img {
+        width: 90%;
+    }
+
+   .container-projects {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+   
+}
+
+/***** end responsive *****/
